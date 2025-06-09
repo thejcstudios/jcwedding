@@ -6,14 +6,12 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     /* Ensure body takes full height for centering */
-    min-height: 100vh;
     display: flex;
     justify-content: center; /* Center the app-container horizontally */
     align-items: flex-start; /* Align to the top of the viewport */
   }
   
   .app-container {
-    min-height: 100vh; /* Takes full viewport height to apply background and allow scrolling if content expands */
     width: 100vw; /* Fill the full screen width */
     max-width: 500px; /* ✅ Controls desktop size */
     overflow-x: hidden; /* ✅ Prevents sideways overflow */

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+.map-app-container {
+  padding-bottom: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/1.webp');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #F3F4F6;
+  color: #1F2937;
+  position: relative;
+}
+
+.map-app-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.map-app-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.map-hero-section {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-hero-section h1 {
+  font-family: "Stalemate", cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.map-header-image {
+    filter: invert(1) brightness(2);
+    width: 100%;
+    max-width: 800px;        /* Optional: limits it on large screens */
+    height: auto;            /* Maintains aspect ratio */
+    object-fit: cover;
+    margin: 0px;
+  }
+
+.map-intro-paragraph {
+    font-weight: 600;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1.3rem;
+    color: white;
+  max-width: 768px;
+  
+}
+
+.map-content-section {
+  max-width: 1024px;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-bordered-container h2 {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 100;
+  color: white;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.map-section-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.map-map-link-container {
+  margin-top: 1.5rem;
+}
+
+.map-link {
+    display: inline-block;
+    background-color: #FFA07A; /* Light Salmon */
+    color: #fffaf0; /* A soft ivory white for elegance */
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .map-link:hover {
+    background-color: #e9967a; /* Slightly darker salmon for hover */
+    transform: translateY(-2px);
+  }
+  .map-link:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .map-hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .map-header-image {
+    max-width: 95%;
+  }
+
+  .map-intro-paragraph {
+    font-size: 1rem;
+  }
+
+  .map-bordered-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .map-link {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .map-intro-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .map-content-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .map-bordered-container h2 {
+    font-size: 1.5rem;
+  }
+}

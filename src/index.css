@@ -5,11 +5,15 @@
   html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
     background: #f1f5f9;
     overflow-x: hidden; /* ✅ Protects entire app */
   }
   
+  body, html {
+    font-family: 'GlossilyEnigmaRegular', 'Deligent', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    /* add other global styles */
+  }

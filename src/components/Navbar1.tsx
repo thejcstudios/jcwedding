@@ -1,38 +1,28 @@
-import '../assets/styles/Navbar1.css'
+import { Link } from 'react-router-dom';
+import '../assets/styles/Navbar1.css';
 
-// Main App component containing the Navbar
 function Navbar1() {
-  // Define navigation links
   const navLinks = [
-    { name: 'Our Story', href: '#' },
-    { name: 'Ceremony', href: '#' },
-    { name: 'Reception', href: '#' },
-    { name: 'RSVP', href: '#' },
-    { name: 'Gallery', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Rsvp', href: '/rsvp' },
+    { name: 'Dress Code', href: '/dresscode' },
+    { name: 'Entourage', href: '/entourage' },
   ];
 
   return (
     <div className="main-layout">
-     
       <nav className="header-nav">
         <div className="nav-content">
-          {/* Logo/Site Title */}
           <div className="site-logo">
-            <a href="#">
-              Julian and Christine Wedding
-            </a>
+            <Link to="/">Julian and Christine Wedding</Link>
           </div>
 
-          {/* Desktop Navigation Links */}
           <div className="main-nav">
             <div className="nav-links-list">
               {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                >
+                <Link key={link.name} to={link.href}>
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

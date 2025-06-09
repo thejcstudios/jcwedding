@@ -27,7 +27,7 @@ export default function Prenup() {
     <div className="wrapper">
       <div className="prenup">
         <header className="prenup-header">
-          <h1>Our Pre-Nuptial Journey</h1>
+          <h1>The Prelude to Us</h1>
           <p>Before we say "I do," we're excited to share some of our favorite moments from our pre-nuptial photoshoot. These photos capture the joy, laughter, and deep connection we share as we eagerly anticipate our big day. We hope you enjoy this glimpse into our journey to forever.</p>
         </header>
 

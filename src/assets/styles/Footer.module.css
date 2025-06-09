@@ -1,0 +1,51 @@
+.footer {
+    background-color: #CD5C5C;
+    color: white;
+    font-family: "Stalemate", cursive;
+    border-top: 1px solid white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footerList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .message {
+    font-size: 2rem;
+  }
+  
+  .message span {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .credit,
+  .dev {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1rem;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .socials a {
+    font-size: 1.2rem;
+    color: #3b5998;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .socials a:hover {
+    transform: scale(1.2);
+    color: #1877f2;
+  }
+  

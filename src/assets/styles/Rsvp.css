@@ -1,0 +1,77 @@
+/* RSVPForm.css */
+
+.rsvp-container {
+    background: linear-gradient(to right, #F08080, #FFDAB9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* sm:p-6 */
+  }
+  
+  .rsvp-box {
+    width: 100%;
+    max-width: 36rem; /* max-w-lg */
+    padding: 1.5rem; /* p-6 */
+    overflow: hidden;
+  }
+  
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem; /* h-64 */
+  }
+  
+  .loading-spinner {
+    animation: spin 1s linear infinite;
+    height: 2.5rem; /* h-10 */
+    width: 2.5rem; /* w-10 */
+    color: #3b82f6; /* blue-500 */
+  }
+  
+  .loading-text {
+    margin-left: 0.75rem; /* ml-3 */
+    color: #4b5563; /* gray-600 */
+  }
+  
+  .error-message {
+    text-align: center;
+    padding: 1.5rem; /* p-6 */
+    background-color: #fef2f2; /* red-50 */
+    border-radius: 0.5rem; /* rounded-lg */
+    border: 1px solid #fecaca; /* border-red-200 */
+    color: #b91c1c; /* red-700 */
+    font-weight: 500; /* font-medium */
+  }
+  
+  .error-subtext {
+    font-size: 0.875rem; /* text-sm */
+  }
+  
+  .rsvp-iframe {
+    border-radius: 0.375rem; /* rounded-md */
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100vh; /* Increase this as needed */
+    border: none;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+  }
+  
+  .rsvp-iframe.hidden {
+    opacity: 0;
+  }
+  
+  .rsvp-iframe.hidden {
+    opacity: 0;
+  }
+  
+  /* Spinner animation */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
