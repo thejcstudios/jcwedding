@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import Invitation from './components/Invitation';
 import About from './components/About';
 import Prenup from './components/Prenup';
-import Video from './components/video';
+import Video from './components/Video';
 
 function App() {
   return (
