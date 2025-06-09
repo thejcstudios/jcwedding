@@ -94,9 +94,10 @@
 }
 
 .map-link {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
     display: inline-block;
     background-color: #FFA07A; /* Light Salmon */
-    color: #fffaf0; /* A soft ivory white for elegance */
+    color: black; /* A soft ivory white for elegance */
     padding: 1rem 2rem;
     border-radius: 0.75rem;
     text-decoration: none;

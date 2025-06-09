@@ -1,0 +1,53 @@
+.container {
+    height: 100vh;
+    padding: 16px;
+    max-width: 600px;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Stalemate", cursive;
+  }
+  
+  .mainImage {
+    filter: invert(1);
+    max-width: 100%;
+    height: auto;
+  }
+  
+  p {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    margin: 12px 0 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .grid {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .circles {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  

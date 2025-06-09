@@ -11,9 +11,3 @@
     overflow-x: hidden; /* ✅ Protects entire app */
   }
   
-  body, html {
-    font-family: 'GlossilyEnigmaRegular', 'Deligent', sans-serif !important;
-    margin: 0;
-    padding: 0;
-    /* add other global styles */
-  }

@@ -59,6 +59,7 @@
  }
 
  .paragraph-text {
+  color: lightgray;
   font-family: "Stalemate", cursive;
    font-size: 2rem; /* Equivalent to text-lg */
    margin-bottom: 2rem; /* Equivalent to mb-8 */

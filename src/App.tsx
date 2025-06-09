@@ -10,6 +10,7 @@ import Video from './components/Video';
 import Map from './components/Map';
 import RSVPForm from './components/Rsvp';
 import Footer from './components/Footer';
+import DressCode from './components/DressCode';
 
 function HomePage() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/rsvp" element={<><Navbar1 /><RSVPForm /><Footer /></>} />
+          <Route path="/DressCode" element={<><Navbar1 /><DressCode /><Footer /></>} />
           {/* Add other routes here */}
         </Routes>
       </Layout>
