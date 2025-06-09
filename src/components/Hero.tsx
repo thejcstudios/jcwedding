@@ -53,9 +53,9 @@ const Hero: React.FC = () => {
         <h1 className="main-heading">Two Hearts, One Journey</h1>
 
         <p className="paragraph-text">
-          Join us as we celebrate the beginning of forever. <br />
-          With love in our hearts and joy in our souls, <br />
-          we invite you to witness the union of our lives <br />
+          Join us as we celebrate the beginning of forever. 
+          With love in our hearts and joy in our souls, 
+          we invite you to witness the union of our lives
           and the start of our beautiful adventure together.
         </p>
 

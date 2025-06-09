@@ -49,3 +49,22 @@
     color: #1877f2;
   }
   
+  .navLinks {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Emilys Candy", serif;
+  }
+  
+  .navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks a:hover {
+    color: #ffe4e1;
+  }
+  

@@ -1,52 +1,85 @@
-.container {
+.entourage-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    font-family: "Segoe UI", sans-serif;
+    text-align: center;
     color: #333;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  h1 {
-    text-align: center;
-    font-size: 2rem;
+  .entourage-title {
+    font-family: "WindSong", cursive;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
   
-  h2 {
-    text-align: center;
-    font-size: 1.5rem;
+  .entourage-subtitle {
+    font-family: "Stalemate", cursive;
+    font-size: 4rem;
     margin-bottom: 2rem;
     color: #a0522d;
+    text-align: center;
   }
   
-  section {
+  .entourage-section {
     margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
   }
   
-  h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #6b4226;
+  .entourage-heading {
+    font-family: "Glass Antiqua", cursive;
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+    text-align: center;
   }
   
-  h4 {
-    margin-top: 1rem;
+  .entourage-subheading {
+    font-family: "Glass Antiqua", cursive;
+    font-size: 2rem;
     font-weight: 600;
-    font-size: 1.1rem;
-    color: #4b3c2e;
+    color: black;
+    margin: 20px 0 0;
+    text-align: center;
   }
   
-  p, li {
-    margin: 0.25rem 0;
+  .entourage-text {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+    text-align: center;
   }
   
-  ul {
-    padding-left: 1.25rem;
+  .entourage-list {
+    list-style: none;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
-  .deceased {
+  .entourage-deceased {
     color: #b91c1c;
     font-style: italic;
+  }
+  
+  .entourage-footerImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
   }
   

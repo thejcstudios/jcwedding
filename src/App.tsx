@@ -11,6 +11,7 @@ import Map from './components/Map';
 import RSVPForm from './components/Rsvp';
 import Footer from './components/Footer';
 import DressCode from './components/DressCode';
+import Entourage from './components/Entourage';
 
 function HomePage() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/rsvp" element={<><Navbar1 /><RSVPForm /><Footer /></>} />
           <Route path="/DressCode" element={<><Navbar1 /><DressCode /><Footer /></>} />
+          <Route path="/entourage" element={<><Navbar1 /><Entourage /><Footer /></>} />
           {/* Add other routes here */}
         </Routes>
       </Layout>
