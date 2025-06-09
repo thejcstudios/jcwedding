@@ -1,4 +1,4 @@
-import '../assets/styles/Navbar.css'
+import '../assets/styles/Navbar1.css'
 
 // Main App component containing the Navbar
 function Navbar1() {
