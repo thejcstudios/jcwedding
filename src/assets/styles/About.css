@@ -1,0 +1,85 @@
+/* App.css */
+
+.aboutus-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: 'Open Sans', sans-serif;
+
+  /* Background styles */
+  background-image: url('/images/aboutbg.jpg');
+  background-size: cover;       /* Make sure it covers the container */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.aboutus-card {
+  background: rgba(240, 128, 128, 0.25); /* Semi-transparent #F08080 */
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 28rem;
+  position: relative;
+
+  /* Glass effect */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(240, 128, 128, 0.4); /* subtle border in matching color */
+  color: #fff; /* optional: text color for contrast */
+}
+
+
+.aboutus-image-wrapper {
+  position: absolute;
+  top: -20rem;
+  left: -5rem;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.aboutus-image {
+  width: 80%;
+  height: 80%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.aboutus-card-content {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.aboutus-heading-group {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 4rem;
+}
+
+.aboutus-heading {
+  font-family: "Stalemate", cursive;
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.aboutus-divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid #d1d5db;
+  margin-left: 4rem;
+}
+
+.aboutus-subtext {
+  font-family: "Stalemate", cursive;
+  display: flex;
+  padding-left: 1.5rem;
+  color: white;
+  font-size: 2.5rem;
+  justify-content: flex-end;
+}

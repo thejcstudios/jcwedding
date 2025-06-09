@@ -1,27 +1,45 @@
-import React from 'react';
+import './assets/styles/Navbar.css'
 
-// Main App component
-const navbar: React.FC = () => {
+// Main App component containing the Navbar
+function App() {
+  // Define navigation links
+  const navLinks = [
+    { name: 'Our Story', href: '#' },
+    { name: 'Ceremony', href: '#' },
+    { name: 'Reception', href: '#' },
+    { name: 'RSVP', href: '#' },
+    { name: 'Gallery', href: '#' },
+  ];
+
   return (
-    // Style block for custom CSS
-    <>
-      <div className="app-container">
-        {/* Navigation Bar */}
-        <nav className="navbar">
-          {/* Brand/Logo */}
-          <div className="logo">
-            My App
+    <div className="main-layout">
+     
+      <nav className="header-nav">
+        <div className="nav-content">
+          {/* Logo/Site Title */}
+          <div className="site-logo">
+            <a href="#">
+              Julian and Christine Wedding
+            </a>
           </div>
-          {/* Navigation Links (flex for mobile spacing) */}
-          <div className="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </div>
-        </nav>
-      </div>
-    </>
-  );
-};
 
-export default navbar;
+          {/* Desktop Navigation Links */}
+          <div className="main-nav">
+            <div className="nav-links-list">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
+}
+
+export default App;
