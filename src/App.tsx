@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Invitation from './components/Invitation';
 import About from './components/About';
 import Prenup from './components/Prenup';
+import Video from './components/video';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
    <About/>
    <Prenup/>
    </Layout>
+   <Video/>;
    </>
   );
 }
