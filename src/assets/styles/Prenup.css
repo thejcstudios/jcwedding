@@ -1,0 +1,67 @@
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.prenup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.prenup-header {
+  text-align: center;
+}
+
+.prenup-header h1 {
+  font-family: "Unna", serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.prenup-header p {
+  font-weight: 600;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.prenup .hero {
+  aspect-ratio: 4 / 3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.prenup nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+  gap: 0.25rem;
+}
+
+.prenup button {
+  width: 100%;
+  aspect-ratio: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.prenup img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+  border-radius: 4px;
+}
+
+.prenup img:hover,
+.prenup img.active {
+  opacity: 1;
+}

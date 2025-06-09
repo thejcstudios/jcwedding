@@ -10,6 +10,25 @@
   font-family: 'Inter', sans-serif;
 }
 
+.couple-names {
+  font-family: "WindSong", cursive;
+  font-size: 3em; /* Adjust as needed */
+  color: #fff; /* Example color */
+  text-align: center; /* Ensures it's centered */
+  margin-bottom: 10px; /* Space between names and date */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for readability */
+}
+
+.wedding-date {
+  margin-top: 0px;
+  font-family: "WindSong", cursive;
+  font-size: 1em; /* Adjust as needed */
+  color: #fff; /* Example color */
+  text-align: center; /* Ensures it's centered */
+  margin-bottom: 40px; /* Space before the next heading */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 
  .overlay {
    position: absolute;

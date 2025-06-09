@@ -1,6 +1,7 @@
 /* App.css */
 
 .aboutus-wrapper {
+  margin-top: 5%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -9,11 +10,13 @@
   font-family: 'Open Sans', sans-serif;
 
   /* Background styles */
-  background-image: url('/images/aboutbg.jpg');
+  background-image: url('/images/aboutbg.webp');
   background-size: cover;       /* Make sure it covers the container */
   background-position: center;  /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
 }
+
+
 
 .aboutus-card {
   background: rgba(240, 128, 128, 0.25); /* Semi-transparent #F08080 */

@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Hero from './components/Hero';
 import Invitation from './components/Invitation';
 import About from './components/About';
+import Prenup from './components/Prenup';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
    <Hero/>
    <Invitation/>
    <About/>
+   <Prenup/>
    </Layout>
    </>
   );
