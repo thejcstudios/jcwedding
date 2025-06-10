@@ -96,3 +96,45 @@
  .cta-button:hover {
    background-color: #e5e7eb; /* Equivalent to hover:bg-gray-200 */
  }
+
+ /* assets/styles/Hero.css */
+
+/* Initial state (hidden/off-screen) */
+.content-container {
+  opacity: 0;
+  transform: translateX(50px); /* Start slightly below its final position */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+/* State when 'is-visible' class is added (visible/final position) */
+.content-container.is-visible {
+  opacity: 1;
+  transform: translateX(0); /* Move to its original position */
+}
+
+/* You can also target individual elements within content-container for more staggered effects */
+.content-container h1,
+.content-container p,
+.content-container .countdown-timer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.content-container.is-visible h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s; /* Stagger the animation for h1 */
+}
+
+.content-container.is-visible p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s; /* Stagger the animation for p */
+}
+
+.content-container.is-visible .countdown-timer {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s; /* Stagger the animation for countdown-timer */
+}

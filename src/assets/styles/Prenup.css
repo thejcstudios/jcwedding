@@ -66,3 +66,23 @@
 .prenup img.active {
   opacity: 1;
 }
+
+/* Initial state for elements that will animate */
+.prenup-header h1,
+.prenup-header p {
+  opacity: 0; /* Start invisible */
+  transform: translateY(50px); /* Start 50px below their final position */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition over 1 second */
+}
+
+/* State when the elements become visible */
+.prenup-header h1.is-visible,
+.prenup-header p.is-visible {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to their original position */
+}
+
+/* Optional: Add a delay for the paragraph to create a staggered effect */
+.prenup-header p {
+  transition-delay: 0.3s; /* The paragraph will start animating 0.3 seconds after the h1 */
+}

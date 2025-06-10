@@ -1,12 +1,15 @@
+// src/components/Hero.tsx (or wherever your Hero component is)
 import React, { useEffect, useState } from 'react';
+import useScrollEffect from '../hooks/useScrollReveal'; // Import the custom hook
 import '../assets/styles/Hero.css';
 
 const Hero: React.FC = () => {
   const backgroundImage = '/images/herobg.webp';
+  // Use the custom hook, specifying the type of element and optional parameters
+  // Here, we want it to trigger once and for the whole container to be visible
+  const contentRef = useScrollEffect<HTMLDivElement>(0.5, true); 
 
   const calculateTimeLeft = () => {
-    // Current date is June 9, 2025 at 8:08:21 PM PST.
-    // The target date for the wedding is June 30, 2025.
     const difference = +new Date('2025-06-30T00:00:00') - +new Date();
     let timeLeft = {
       days: '00',
@@ -44,10 +47,8 @@ const Hero: React.FC = () => {
     >
       <div className="overlay"></div>
 
-      <div className="content-container">
-        {/* Julian and Christine moved to the top and centered */}
+      <div className="content-container" ref={contentRef}> {/* Attach the ref here */}
         <h1 className="couple-names">Julian and Christine</h1>
-        {/* Wedding date below the names, also centered */}
         <p className="wedding-date">June 30, 2025</p>
 
         <h1 className="main-heading">Two Hearts, One Journey</h1>
@@ -59,7 +60,6 @@ const Hero: React.FC = () => {
           and the start of our beautiful adventure together.
         </p>
 
-        {/* Countdown Timer */}
         <div className="countdown-timer">
           <span>{timeLeft.days}d</span> :
           <span>{timeLeft.hours}h</span> :

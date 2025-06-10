@@ -86,3 +86,64 @@
   font-size: 2.5rem;
   justify-content: flex-end;
 }
+
+/* src/assets/styles/About.css */
+
+/* --- Existing general styles for aboutus-wrapper, aboutus-card, etc. go here --- */
+/* Ensure your image wrapper has appropriate styles */
+.aboutus-image-wrapper {
+  /* Example styles for image wrapper */
+  margin-bottom: 20px;
+  overflow: hidden; /* Crucial for animations that start off-screen */
+}
+
+.aboutus-image {
+  /* Example styles for image */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.aboutus-card-content {
+  text-align: center;
+  padding: 20px;
+  /* Add any existing styles for the content area */
+}
+
+.aboutus-divider {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px auto;
+}
+
+
+/* --- Scroll Effect for Heading --- */
+.aboutus-heading {
+  opacity: 0;
+  transform: translateY(30px); /* Starts slightly below */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Fade in and slide up, 1.5 seconds */
+}
+
+.aboutus-heading.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Scroll Effect for Subtext --- */
+.aboutus-subtext {
+  opacity: 0;
+  transform: translateX(-50px); /* Starts from the left */
+  transition: opacity 2s ease-out, transform 2s ease-out; /* Fade in and slide from left, 2 seconds */
+}
+
+.aboutus-subtext.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Optional: Add a subtle delay for the subtext to animate after the heading */
+.aboutus-subtext {
+    transition-delay: 0.3s; /* This will make the subtext animation start 0.3 seconds after the heading */
+}

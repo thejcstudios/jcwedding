@@ -47,4 +47,32 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     display: inline-block;
   }
-  
+  /* src/assets/styles/Invitation.css */
+
+/* --- Scroll Effect for Title --- */
+.invitation-title {
+  opacity: 0;
+  transform: translateX(-150px); /* Start further left than message */
+  transition: opacity 1.8s ease-out, transform 1.8s ease-out; /* Slightly faster than message */
+  margin-bottom: 20px;
+  font-size: 3em; /* Example font size */
+}
+
+.invitation-title.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- Scroll Effect for Message --- */
+.invitation-message {
+  opacity: 0;
+  transform: translateX(150px); /* Start from the right */
+  transition: opacity 2.2s ease-out, transform 2.2s ease-out; /* Slower and distinct transition */
+  font-size: 1.2em; /* Example font size */
+  line-height: 1.5;
+}
+
+.invitation-message.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}

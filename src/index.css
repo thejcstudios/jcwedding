@@ -1,13 +1,12 @@
 *, *::before, *::after {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background: #f1f5f9;
-    overflow-x: hidden; /* ✅ Protects entire app */
-  }
-  
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
