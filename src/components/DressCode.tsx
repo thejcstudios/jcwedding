@@ -17,7 +17,7 @@ const DressCode: React.FC = () => {
   const circleColors = ["#A52A2A", "#FF7F50", "#E9967A", "#B22222", "#CD5C5C"];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.dresscontainer}>
       <h1>Wedding Details</h1>
       <img 
         src={singleImage} 

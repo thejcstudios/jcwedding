@@ -1,25 +1,27 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    /* Ensure body takes full height for centering */
-    display: flex;
-    justify-content: center; /* Center the app-container horizontally */
-    align-items: flex-start; /* Align to the top of the viewport */
-  }
-  
-  .app-container {
-    width: 100vw; /* Fill the full screen width */
-    max-width: 500px; /* ✅ Controls desktop size */
-    overflow-x: hidden; /* ✅ Prevents sideways overflow */
-    background: linear-gradient(to right, #F08080, #FFDAB9);
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    color: #374151; /* text-gray-800 */
-    box-sizing: border-box; /* Include padding in width calculation */
-    /* No need for margin: auto; here as body handles centering */
-  }
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;         /* Center the app-container horizontally */
+  align-items: flex-start;         /* Align app to the top */
+  background: linear-gradient(to right, #F08080, #FFDAB9);
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;                /* Responsive max width */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #F08080, #FFDAB9);    /* Optional: make content area stand out */
+  overflow-x: hidden;
+  color: #374151;                  /* text-gray-800 */
+  box-sizing: border-box;
+  padding: 1rem;
+}
